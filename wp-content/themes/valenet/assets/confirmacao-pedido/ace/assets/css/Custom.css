@@ -1,0 +1,45 @@
+﻿.xx-small {
+    font-size:10px;
+}
+.xxx-small {
+    font-size:8px;
+}
+tr.alert td{
+        font-size:13px;
+    }
+.small {
+    font-size:13px;
+}
+.x-small{
+    font-size:12px;
+}
+
+.modal-big{
+    width:1100px;
+    margin-left: -550px !important;
+}
+
+
+.inline-edit-qtd{    
+    display:block;
+    width:100%;
+    border:thin solid #808080;
+    text-align:right;
+    min-height:20px !important;
+    height:20px !important;
+    line-height:15px;
+    padding:2px;
+    margin-right:5px;
+    
+
+}
+.inline-edit{
+    display:block;
+    width:100%;
+    border:thin solid transparent;
+    text-align:right;
+}
+.inline-edit:hover{
+    border:thin solid #808080;
+    cursor:default;
+}

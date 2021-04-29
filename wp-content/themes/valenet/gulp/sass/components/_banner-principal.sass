@@ -1,0 +1,78 @@
+.banner-principal
+    height: 75%
+
+    @media ($break-md)
+        height: 60%
+
+    .item-banner
+        height: 100%
+        width: 100%
+        background-position: center center
+        background-size: cover
+
+        .text-banner
+            height: 100%
+            display: flex
+            justify-content: center
+            flex-direction: column
+
+            h1 
+                color: white
+                left: 15%
+                position: relative
+                width: 25%
+                font-size: 48px
+                display: block 
+                margin-bottom: 30px
+
+                @media ($break-notebooks)
+                    width: 40%
+                    font-size: 38px
+
+                @media ($break-md)
+                    font-size: 35px
+
+                @media ($break-sm)
+                    width: 70%
+                    padding: 30px
+                    left: 30px
+                    font-size: 20px
+                    background-color: rgba($azulMarca, .60)
+                
+                small 
+                    color: $azulMarca
+                    display: block
+                    font-weight: bold
+                    font-size: 100%
+
+                    @media ($break-sm)
+                        width: 100%
+                        left: 30px
+                        font-size: 20px
+            
+                &:after
+                    content: ' '
+                    background-color: white
+                    height: 5px
+                    width: 30%
+                    position: absolute
+                    left: 0px
+                    margin-top: 10px
+
+            h2 
+                color: white
+                left: 15%
+                position: relative
+                width: 40%
+                font-size: 40px
+
+                @media ($break-md)
+                    font-size: 25px
+
+                @media ($break-sm)
+                    display: none
+                    
+                small
+                    display: block      
+    img 
+        height: 100%

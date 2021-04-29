@@ -1,0 +1,116 @@
+.barra-menu-sistema
+  background: linear-gradient(to right,$azulMarca 25%, #282F32 25%)
+
+  @media ($break-sm)
+    background: #282F32
+  
+.menu-sistema
+  // background: linear-gradient(to right,$azulMarca 25%, #282F32 25%) 
+  background-color: #282F32
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+
+  ul 
+    list-style: none 
+    padding: 0
+    margin: 0
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    justify-content: center
+
+    @media ($break-sm)
+      // display: none
+
+    // @media ($break-sm)
+    //   display: none
+
+    .link-assintante
+      background-color: $azulMarca
+
+      @media ($break-sm)
+        background-color: transparent
+
+    li 
+      border-right: #3c4244 solid 1px
+
+      @media ($break-sm)
+        width: 50%
+        border-right: 0px
+
+      &:first-child
+        border-right: transparent solid 1px
+        
+        a
+          text-align: right
+        
+      &:last-child
+        border-right: transparent solid 1px
+
+      a 
+        color: white
+        font-size: 16px
+        display: block
+        padding: 18px 20px
+        transition-duration: .8s
+
+        &:hover
+          text-decoration: none
+          background-color: $azulMenu
+        
+        @media ($break-sm)
+          font-size: 13px
+          text-align: center
+
+.bar-fale
+  display: flex
+  align-items: center
+  padding-right: 20px
+
+  @media ($break-md)
+    display: none
+    width: 100%
+
+  @media ($break-sm)
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    padding-right: 0px
+
+    ul
+      display: flex
+      justify-content: center
+      align-items: center
+      // width: 100%
+
+      @media ($break-sm)
+        width: 100%
+        padding-bottom: 20px
+
+      li
+        text-align: center
+
+  .icon
+    color: $azulMarca
+    font-size: 60px
+    position: relative
+    top: 5px
+    display: block
+
+  .fale-conosco
+    color: white
+    font-size: 13px
+    border: transparent solid 1px
+    text-align: right
+    padding-right: 20px
+
+    span 
+      display: block
+
+    .num-fale
+      font-family: 'Exo'
+      color: $azulMarca
+      font-size: 40px
+      font-weight: bold

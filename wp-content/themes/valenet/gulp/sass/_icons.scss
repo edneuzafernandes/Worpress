@@ -1,0 +1,106 @@
+@font-face {
+	font-family: "icons";
+	src: url('../fonts/icons.eot');
+	src: url('../fonts/icons.eot?#iefix') format('eot'),
+		url('../fonts/icons.woff2') format('woff2'),
+		url('../fonts/icons.woff') format('woff'),
+		url('../fonts/icons.ttf') format('truetype'),
+		url('../fonts/icons.svg#icons') format('svg');
+}
+
+.icon:before {
+	font-family: "icons";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	/* speak: none; only necessary if not using the private unicode range (firstGlyph option) */
+	text-decoration: none;
+	text-transform: none;
+}
+
+
+.icon-aspas-dir:before {
+	content: "\E001";
+}
+
+.icon-aspas-esq:before {
+	content: "\E002";
+}
+
+.icon-assinante:before {
+	content: "\E003";
+}
+
+.icon-assinatura-stalo:before {
+	content: "\E004";
+}
+
+.icon-atendimento:before {
+	content: "\E005";
+}
+
+.icon-expand:before {
+	content: "\E006";
+}
+
+.icon-facebook:before {
+	content: "\E007";
+}
+
+.icon-fone-contato:before {
+	content: "\E008";
+}
+
+.icon-forma-bg-body:before {
+	content: "\E009";
+}
+
+.icon-icon_plus:before {
+	content: "\E00A";
+}
+
+.icon-instagram:before {
+	content: "\E00B";
+}
+
+.icon-internet:before {
+	content: "\E00C";
+}
+
+.icon-linkedin:before {
+	content: "\E00D";
+}
+
+.icon-map:before {
+	content: "\E00E";
+}
+
+.icon-roteador-valenet-forma:before {
+	content: "\E00F";
+}
+
+.icon-telefone-valenet-forma:before {
+	content: "\E010";
+}
+
+.icon-telefone-valenet-line:before {
+	content: "\E011";
+}
+
+.icon-telefone:before {
+	content: "\E012";
+}
+
+.icon-televisao:before {
+	content: "\E013";
+}
+
+.icon-twitter:before {
+	content: "\E014";
+}
+
+.icon-whatsapp:before {
+	content: "\E015";
+}

@@ -1,0 +1,118 @@
+// menu responsivo
+.menu-ativo
+    overflow: hidden
+    
+//// menu responsivo 
+.btn-menu-responsive
+    position: absolute
+    top: 50%
+    right: 20px
+    width: 40px
+    height: 40px
+    z-index: 1
+    background-color: transparent
+    border: transparent
+    cursor: pointer
+    transform: translateY(-50%)
+    z-index: 200
+    display: none
+
+    @media ($break-sm)
+        display: block
+    
+    @media ($break-md)
+        display: block
+
+    .icon-bar
+        height: 4px
+        width: 35px
+        background-color: $azulMarca
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        transition: background .1s linear .3s
+
+        &::after, &::before
+            content: ''
+            position: absolute
+            left: 0
+            height: 4px
+            width: 100%
+            background-color: $azulMarca
+
+        &::after
+            bottom: -10px
+            transition: bottom .3s ease-in-out .4s, transform .3s ease-in-out
+
+        &::before
+            top: -10px
+            transition: top .3s ease-in-out .4s, transform .3s ease-in-out
+
+.openMenu
+
+    .icon-bar
+        background-color: transparent
+
+        &::before
+            top: 0
+            transform: rotate(-45deg)
+            transition: top .3s ease-in-out, transform .3s ease-in-out .4s
+            background-color: $azulMenu
+            
+        &::after
+            bottom: 0
+            transform: rotate(45deg)
+            transition: bottom .3s ease-in-out, transform .3s ease-in-out .4s
+            background-color: $azulMenu
+
+.lista-menu
+    list-style: none
+    padding: 0px
+    // margin: 200px 20px
+    width: 100%
+    position: relative
+
+    li
+        margin-bottom: 0px
+
+        .acitve 
+
+            .nav-link
+                // background-color: transparent
+
+    a.nav-link
+        color: $azulMarca
+        font-size: 20px !important
+        text-decoration: none
+        padding: 10px
+
+        &:hover
+            background: transparent
+            
+
+    // &:hover
+    //     color: $yellow
+    
+    .dropdown-menu
+        position: relative
+        width: 90%
+        background-color: $azulMarca
+        border:#fff solid 1px
+        margin-bottom: 0px
+
+.body-menu-responsive
+    position: fixed
+    display: flex
+    align-items: center
+    width: 100%
+    height: 100%
+    background-color: white
+    // opacity: 0.9
+    top: 0px
+    z-index: 100
+    right: -100%
+    transition: right .5s
+
+.body-menu-responsive-open
+    right: 0

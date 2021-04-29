@@ -1,0 +1,178 @@
+// box de combos do site
+.box-combo
+    box-shadow: 3px 8px 25px rgba(0, 0, 0, 0.3)
+    background: white
+    border: 1px solid #FFFEFE
+    box-sizing: border-box
+    border-radius: 10px 10px 0 0px
+    border-bottom: $azulMarca solid 1px
+    z-index: 2
+    position: relative
+    margin-bottom: 30px
+    // min-height: 760px
+    width: 100%
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    
+    h5 
+        color: rgba(0, 0, 0, 0.75)
+        font-family: 'Roboto', sans-serif
+        font-style: normal
+        font-weight: bold
+        line-height: 18px
+        font-size: 18px
+
+    @media ($break-sm)
+        margin-bottom: 20px
+
+    .plus-canais
+
+        .open-popup
+            color: $azulMarca
+            text-decoration: none 
+
+            .icon
+                font-size: 24px
+
+    .internet-mega
+        font-family: Exo
+        font-style: normal
+        font-weight: bold
+        line-height: 46px
+        font-size: 40px
+        text-transform: uppercase
+        display: block
+        position: relative
+        margin-bottom: 10px
+
+        &:after
+            content: ' '
+            position: absolute
+            width: 100%
+            left: 0px
+            background-color: #BDBDBD
+            height: 2px
+            bottom: 0px
+
+    .title-combo
+        font-style: normal
+        font-weight: normal
+        text-align: center
+        text-transform: uppercase
+        background: linear-gradient(254.99deg, $azulMarca 13.42%, $variacaoAzul 98.1%), $azulMarca
+        padding: 15px
+        display: block
+        z-index: 2
+        border-radius: 10px 10px 0 0px
+
+        h4 
+            color: white
+            line-height: 19px
+            font-size: 18px
+
+        small
+            color: #5ADFFC
+            display: block
+    
+        &:after
+            z-index: 1
+            content: ''
+            width: 20px
+            height: 20px
+            display: block
+            position: absolute
+            //top: 0px
+            transform: rotate(45deg)
+            left: 45%
+            background: #0E95D3
+            bottom: -10px
+
+    .boxes-item
+        display: flex
+        flex-wrap: wrap
+        padding-top: 20px
+        padding-bottom: 20px
+        justify-content: center
+        // border-top: 1px solid #ECECEC
+        // border-bottom: 1px solid #ECECEC
+
+        div
+            padding: 10px
+            width: 60%
+            font-size: 13px
+
+            &:first-child
+                width: 40%
+
+            .icon 
+                font-size: 60px
+                color: #189CD9
+                position: relative
+                top: 22px
+    .bg-grey
+        background-color: #F8F8F8
+
+    .bg-white
+        background-color: white
+
+    .price
+        margin-bottom: 20px
+        color: $azulMarca
+        font-size: 18px
+
+        span 
+            font-size: 45px
+            font-weight: 900
+
+        small
+            display: block
+            font-size: 10px
+.box-price
+    // position: absolute
+    bottom: 0px
+    width: 100%
+
+    div
+        width: 100% !important
+
+// pre footer
+.pre-footer
+    background: rgba(196, 196, 196, 0.1)
+
+.planos-produtos
+
+    .swiper-button-next, .swiper-button-prev
+        background-image: none
+
+    // setas produtos
+    .plan-next
+
+        &:before
+            content: '\E009'
+            font-family: 'icons'
+            color: black
+            font-size: 45px
+            position: absolute
+            right: 0px
+    
+    .plan-prev
+
+        &:before
+            content: '\E009'
+            font-family: 'icons'
+            color: black
+            font-size: 45px
+            position: absolute
+            right: 0px
+            transform: rotate(180deg) translateY(-50%);
+    
+    @media ($break-sm)
+        overflow: hidden
+
+    @media ($break-md)
+        overflow: hidden
+        
+    .swiper-slide
+        display: flex
+        height: auto

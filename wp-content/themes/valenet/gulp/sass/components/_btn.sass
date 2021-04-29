@@ -1,0 +1,85 @@
+.btn
+    box-sizing: border-box;
+    border-radius: 40px;
+    padding-left: 50px
+    padding-right: 50px
+    transition-duration: 1.7s
+
+.btn-site
+    background: linear-gradient(254.99deg, $azulMarca 13.42%, $variacaoAzul 98.1%), $azulMarca
+    color: white
+    text-transform: uppercase
+    font-weight: bold
+    border: 1px solid $azulMarca;
+
+    &:hover
+        background: linear-gradient(254.99deg, $variacaoAzul 13.42%, $azulMarca 98.1%), $variacaoAzul
+        color: white
+    
+    @media ($break-sm)
+        // width: 100%
+        justify-content: center
+        align-items: center
+        display: flex
+        font-size: 12px !important
+
+// btn banner institucional
+.btn-banner-institucional
+    border: $azulMarca solid 1px
+    color: white
+    background-color: rgba($azulMarca, 0.4)
+
+    &:hover
+        background-color: rgba($azulMarca, 1)
+        color: white
+
+// btn de produtos
+.btn-tv
+    margin-top: $inner
+    margin-right: $inner
+    font-weight: bold
+
+    &:last-child
+        margin-right: 0px
+
+.btn-assine-produto
+    background-color: $tvColor
+    color: white
+    border: $tvColor solid 1px
+
+    &:hover
+        background-color: transparent
+        color: $tvColor
+
+    @media ($break-sm)
+        margin-top: 20px
+
+.btn-tv-outline
+    border: $tvColor solid 1px
+    color: $tvColor
+    
+    &:hover
+        background-color: $tvColor
+        color: white
+
+.btn-price-produto
+    background: linear-gradient(209.58deg, #BED87F 0%, #89AE5B 102.15%)
+    color: white
+
+    &:hover
+        background: linear-gradient(209.58deg, #89AE5B 0%, #BED87F 102.15%)
+        color: white
+
+
+.btn-finaliza
+    background: linear-gradient(254.99deg, $azulMarca 13.42%, $variacaoAzul 98.1%), $azulMarca
+    font-family: 'Roboto', sans-serif
+    font-style: normal;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FAFF04;
+    border-radius: 0px 0px 9px 9px;
+
+    &:hover
+        background: linear-gradient(254.99deg, $variacaoAzul 13.42%, $azulMarca 98.1%), $variacaoAzul
